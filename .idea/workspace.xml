@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05656e82-7654-41e7-8961-01a9eee9e569" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kata/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kata/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kata/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kata/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kata/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kata/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kata/UnitConverterImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kata/UnitConverterImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kata/UserInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kata/UserInterface.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,8 +44,8 @@
       <file leaf-file-name="UserInterface.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/kata/UserInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+            <state relative-caret-position="442">
+              <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -308,7 +303,7 @@
       <workItem from="1526738484034" duration="1891000" />
       <workItem from="1527009340212" duration="1919000" />
       <workItem from="1527011595797" duration="1054000" />
-      <workItem from="1527013958396" duration="1846000" />
+      <workItem from="1527013958396" duration="2109000" />
     </task>
     <servers />
   </component>
@@ -339,7 +334,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6710000" />
+    <option name="totallyTimeSpent" value="6973000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="-17" width="1564" height="918" extended-state="6" />
@@ -355,8 +350,8 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32991013" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32991013" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32991013" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32991013" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32991013" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.257874" />
@@ -557,8 +552,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kata/UserInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+        <state relative-caret-position="442">
+          <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
         </state>
       </provider>
     </entry>

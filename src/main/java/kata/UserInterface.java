@@ -27,16 +27,16 @@ public class UserInterface {
                 System.out.print("Wynik = " + unitConverter.celsiusToFahrenheit(Double.valueOf(scanner.next())));
                 break;
             case 2 :
-                System.out.println("Podaj wartość do przeliczenia: ");
-                System.out.println("Wynik = " + unitConverter.fahrenheitToCelsius(Double.valueOf(scanner.next())));
+                System.out.print("Podaj wartość do przeliczenia: ");
+                System.out.print("Wynik = " + unitConverter.fahrenheitToCelsius(Double.valueOf(scanner.next())));
                 break;
             case 3 :
-                System.out.println("Podaj wartość do przeliczenia: ");
-                System.out.println("Wynik = " + unitConverter.milesToKilometers(Double.valueOf(scanner.next())));
+                System.out.print("Podaj wartość do przeliczenia: ");
+                System.out.print("Wynik = " + unitConverter.milesToKilometers(Double.valueOf(scanner.next())));
                 break;
             case 4 :
-                System.out.println("Podaj wartość do przeliczenia: ");
-                System.out.println("Wynik = " + unitConverter.kilometersToMiles(Double.valueOf(scanner.next())));
+                System.out.print("Podaj wartość do przeliczenia: ");
+                System.out.print("Wynik = " + unitConverter.kilometersToMiles(Double.valueOf(scanner.next())));
                 break;
         }
     }
