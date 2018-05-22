@@ -1,6 +1,11 @@
 package kata;
 
+import java.util.Scanner;
+
 public class UserInterface {
+
+    UnitConverter unitConverter = new UnitConverterImpl();
+
     public static void printMenu() {
         System.out.println("KONWERTER JEDNOSTEK");
         System.out.println("MENU:");
@@ -11,15 +16,27 @@ public class UserInterface {
         System.out.println("5. Funty -> Kilogramy");
         System.out.println("6. Kilogramy -> Funty");
         System.out.println("7. Zakończ");
+        System.out.print("Wybierz opcję: ");
     }
 
-    public static void selectOption(int choise) {
-        switch(choise) {
+    public void selectOption(int choice) {
+        Scanner scanner = new Scanner(System.in);
+        switch(choice) {
             case 1 :
-                System.out.println("Opcja 1");
+                System.out.print("Podaj wartość do przeliczenia: ");
+                System.out.print("Wynik = " + unitConverter.celsiusToFahrenheit(Double.valueOf(scanner.next())));
                 break;
             case 2 :
-                System.out.println("Opcja 2");
+                System.out.println("Podaj wartość do przeliczenia: ");
+                System.out.println("Wynik = " + unitConverter.fahrenheitToCelsius(Double.valueOf(scanner.next())));
+                break;
+            case 3 :
+                System.out.println("Podaj wartość do przeliczenia: ");
+                System.out.println("Wynik = " + unitConverter.milesToKilometers(Double.valueOf(scanner.next())));
+                break;
+            case 4 :
+                System.out.println("Podaj wartość do przeliczenia: ");
+                System.out.println("Wynik = " + unitConverter.kilometersToMiles(Double.valueOf(scanner.next())));
                 break;
         }
     }
