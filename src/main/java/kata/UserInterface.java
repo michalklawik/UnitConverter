@@ -33,8 +33,11 @@ public class UserInterface {
         switch(choice) {
             case 1 :
                 System.out.print("Podaj wartość do przeliczenia: ");
-                System.out.println("Wynik = " + unitConverter.celsiusToFahrenheit(Double.valueOf(scanner.next())));
-                System.out.println("[Enter] aby przejść do menu\n");
+                try {
+                    System.out.println("Wynik = " + unitConverter.celsiusToFahrenheit(Double.valueOf(scanner.next())));
+                } catch (NumberFormatException e) {
+                    System.out.println("Wprowadzono niepoprawne dane!");
+                }
                 if (scanner.hasNextLine()) {
                     printMenu();
                 }
