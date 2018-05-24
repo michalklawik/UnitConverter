@@ -4,9 +4,18 @@ import java.util.Scanner;
 
 public class UserInterface {
 
-    UnitConverter unitConverter = new UnitConverterImpl();
+    private UnitConverter unitConverter = new UnitConverterImpl();
+    private boolean finish;
 
-    public static void printMenu() {
+    public void operateUI() {
+        printMenu();
+        Scanner scanner = new Scanner(System.in);
+        do {
+            selectOption(Integer.valueOf(scanner.next()));
+        } while (!finish);
+    }
+
+    private static void printMenu() {
         System.out.println("KONWERTER JEDNOSTEK");
         System.out.println("MENU:");
         System.out.println("1. Celcjusz -> Fahrenheit");
@@ -19,24 +28,39 @@ public class UserInterface {
         System.out.print("Wybierz opcję: ");
     }
 
-    public void selectOption(int choice) {
+    private void selectOption(int choice) {
         Scanner scanner = new Scanner(System.in);
         switch(choice) {
             case 1 :
                 System.out.print("Podaj wartość do przeliczenia: ");
-                System.out.print("Wynik = " + unitConverter.celsiusToFahrenheit(Double.valueOf(scanner.next())));
+                System.out.println("Wynik = " + unitConverter.celsiusToFahrenheit(Double.valueOf(scanner.next())));
+                System.out.println("[Enter] aby przejść do menu\n");
+                if (scanner.hasNextLine()) {
+                    printMenu();
+                }
                 break;
             case 2 :
                 System.out.print("Podaj wartość do przeliczenia: ");
-                System.out.print("Wynik = " + unitConverter.fahrenheitToCelsius(Double.valueOf(scanner.next())));
+                System.out.println("Wynik = " + unitConverter.fahrenheitToCelsius(Double.valueOf(scanner.next())));
                 break;
             case 3 :
                 System.out.print("Podaj wartość do przeliczenia: ");
-                System.out.print("Wynik = " + unitConverter.milesToKilometers(Double.valueOf(scanner.next())));
+                System.out.println("Wynik = " + unitConverter.milesToKilometers(Double.valueOf(scanner.next())));
                 break;
             case 4 :
                 System.out.print("Podaj wartość do przeliczenia: ");
-                System.out.print("Wynik = " + unitConverter.kilometersToMiles(Double.valueOf(scanner.next())));
+                System.out.println("Wynik = " + unitConverter.kilometersToMiles(Double.valueOf(scanner.next())));
+                break;
+            case 5 :
+                System.out.println("Podaj wartość do przeliczenia: ");
+                System.out.println("Wynik = " + unitConverter.poundsToKilograms(Double.valueOf(scanner.next())));
+                break;
+            case 6 :
+                System.out.println("Podaj wartość do przeliczenia: ");
+                System.out.println("Wynik = " + unitConverter.kilogramsToPounds(Double.valueOf(scanner.next())));
+                break;
+            case 7 :
+                finish = true;
                 break;
         }
     }
